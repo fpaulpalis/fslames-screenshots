@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FSLAMES Screenshots</title>
+  <meta name="description" content="Screenshot gallery for the FSLAMES mobile app, in user-journey order.">
+  <link rel="icon" href="assets/images/current_fslames_logo.png" type="image/png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <figure class="logo-set">
+          <img class="logo" src="assets/images/current_fslames_logo.png" alt="FSLAMES logo (current)" width="56" height="56">
+          <figcaption>Current</figcaption>
+        </figure>
+        <figure class="logo-set">
+          <img class="logo" src="assets/images/proposed_newlogo.png" alt="FSLAMES logo (proposed)" width="56" height="56">
+          <figcaption>Proposed</figcaption>
+        </figure>
+        <h1>FSLAMES screenshots</h1>
+      </div>
+      <p class="lead">Every screen of the FSLAMES app, in user-journey order. Select a thumbnail to view it full size. Details and source notes are in <a href="SCREENSHOT_INDEX.md">SCREENSHOT_INDEX.md</a>.</p>
+      <div class="controls">
+        <label class="search">
+          <span class="visually-hidden">Search screenshots</span>
+          <input type="search" id="search" placeholder="Search by screen, section, feature, or filename" autocomplete="off">
+        </label>
+        <label class="filter">
+          <span class="visually-hidden">Filter by feature</span>
+          <select id="feature"><option value="">All features</option></select>
+        </label>
+        <p class="count" id="count" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap layout">
+    <nav class="toc" aria-label="Sections">
+      <p class="toc-title">Sections</p>
+      <ol id="toc"></ol>
+    </nav>
+
+    <main id="gallery"></main>
+  </div>
+
+  <p class="empty" id="empty" hidden>No screenshots match your search.</p>
+
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-bar">
+      <span id="viewer-title"></span>
+      <div class="viewer-actions">
+        <button type="button" id="prev" aria-label="Previous screenshot">&larr;</button>
+        <button type="button" id="next" aria-label="Next screenshot">&rarr;</button>
+        <a id="open-tab" target="_blank" rel="noopener">Open in new tab</a>
+        <button type="button" id="close" aria-label="Close viewer">Close</button>
+      </div>
+    </div>
+    <div class="viewer-body">
+      <img id="viewer-img" alt="">
+    </div>
+  </dialog>
+
+  <script src="manifest.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
