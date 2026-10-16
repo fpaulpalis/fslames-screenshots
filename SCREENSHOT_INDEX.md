@@ -9,6 +9,7 @@ Screenshots come from the FSLAMES Flutter app (source: `lib/` in the app reposit
 - **Route:** the app uses no named routes. Navigation is `MaterialPageRoute`, `showDialog`, or modal presentation, so each row says where the screen is opened from.
 - **Source file:** verified by reading the code that builds the screen. Rows marked UNVERIFIED are best guesses; check them before relying on them.
 - Tab numbers refer to the bottom navigation in `AppShell` (`lib/features/home/app_shell.dart`): 0 Home, 1 Practice, 2 Quiz, 3 Profile.
+- **Debug-only screen:** the Reference frames screen (`learn_reference-frames_main_01.png`) is opened from a button wrapped in `if (kDebugMode)` in `lib/features/learn/sign_detail_screen.dart`. It appears in debug builds only, not in release builds.
 - Dark-mode images reuse the same screen files under `AppTheme.dark`; no separate dark widgets exist.
 
 ## Screenshots
@@ -47,7 +48,7 @@ Screenshots come from the FSLAMES Flutter app (source: `lib/` in the app reposit
 | [practice_modules-list_main_01.png](practice/practice_modules-list_main_01.png) | practice | Module list | Tab 1 (AppShell) | PracticeScreen | `lib/features/practice/practice_screen.dart` — UNVERIFIED: no 'Module list' heading in code; ModulePicker in lib/widgets/module_picker.dart is the alternative |
 | [learn_sign-detail_main_01.png](learn/learn_sign-detail_main_01.png) | learn | Sign detail | Pushed from ModuleDetailScreen | SignDetailScreen | `lib/features/learn/sign_detail_screen.dart` |
 | [learn_sign-detail_how-to-practice_01.png](learn/learn_sign-detail_how-to-practice_01.png) | learn | Sign detail · How to practice | Pushed from ModuleDetailScreen | SignDetailScreen ('How to practice' card) | `lib/features/learn/sign_detail_screen.dart` |
-| [learn_reference-frames_main_01.png](learn/learn_reference-frames_main_01.png) | learn | Reference frames | Pushed from SignDetailScreen (debug builds only) | ReferenceFramesScreen | `lib/features/learn/reference_frames_screen.dart` |
+| [learn_reference-frames_main_01.png](learn/learn_reference-frames_main_01.png) | learn | Reference frames | Pushed from SignDetailScreen, shown only when kDebugMode (debug builds only, not in release) | ReferenceFramesScreen | `lib/features/learn/reference_frames_screen.dart` |
 | [practice_gesture-drill_camera-permission_01.png](practice/practice_gesture-drill_camera-permission_01.png) | practice | Gesture drill · Camera permission | Sheet from GestureDrillScreen | CameraConsentSheet | `lib/widgets/camera_consent.dart` |
 | [practice_gesture-drill_camera-preview_01.png](practice/practice_gesture-drill_camera-preview_01.png) | practice | Gesture drill · Camera preview | Presented from SignDetailScreen | AssessmentViewfinder (hosted by GestureDrillScreen) | `lib/features/practice/sign_assessment.dart` |
 | [practice_gesture-drill_clip-review_01.png](practice/practice_gesture-drill_clip-review_01.png) | practice | Gesture drill · Clip review | Dialog from GestureDrillScreen | ClipReviewDialog | `lib/features/practice/sign_assessment.dart` |

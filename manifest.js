@@ -58,7 +58,7 @@ window.SCREENSHOT_GROUPS = [
       { file: "practice/practice_modules-list_main_01.png", feature: "practice", title: "Module list", desc: "Practice modules and their status." },
       { file: "learn/learn_sign-detail_main_01.png", feature: "learn", title: "Sign detail", desc: "Details for one sign, with a way to practice it." },
       { file: "learn/learn_sign-detail_how-to-practice_01.png", feature: "learn", title: "Sign detail", section: "How to practice", desc: "Steps for practicing this sign." },
-      { file: "learn/learn_reference-frames_main_01.png", feature: "learn", title: "Reference frames", desc: "The reference frames for a sign, to compare your own signing against." },
+      { file: "learn/learn_reference-frames_main_01.png", feature: "learn", title: "Reference frames", desc: "The reference frames for a sign, to compare your own signing against. Debug builds only, not in release." },
       { file: "practice/practice_gesture-drill_camera-permission_01.png", feature: "practice", title: "Gesture drill", section: "Camera permission", desc: "Asks for camera access before a practice attempt." },
       { file: "practice/practice_gesture-drill_camera-preview_01.png", feature: "practice", title: "Gesture drill", section: "Camera preview", desc: "Live camera preview while you sign." },
       { file: "practice/practice_gesture-drill_clip-review_01.png", feature: "practice", title: "Gesture drill", section: "Clip review", desc: "Review of your recorded attempt before it is scored." },
