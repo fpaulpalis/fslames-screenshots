@@ -23,6 +23,12 @@
   <img src="https://img.shields.io/badge/works-offline-c9a227" alt="Works offline">
 </p>
 
+## Availability
+
+FSLAMES is a thesis project. **This repository is a public showcase only**:
+the source code, recognition models, and FSL dataset are kept private and are
+not distributed here.
+
 <p align="center">
   <a href="#what-it-does">What it does</a> ·
   <a href="#screenshots">Screenshots</a> ·
@@ -100,13 +106,6 @@ flowchart TD
     E --> F[Scoring and feedback layer]
     F --> G[(SQLite local data)]
 ```
-
-## Availability
-
-FSLAMES is a thesis project. **This repository is a public showcase only**:
-the source code, recognition models, and FSL dataset are kept private and are
-not distributed here.
-
 
 ## Research team
 
