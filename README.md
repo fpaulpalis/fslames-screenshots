@@ -7,7 +7,7 @@
 <p align="center">
   <b>Filipino Sign Language Automated Mobile Education System</b><br>
   An offline-first, gamified Flutter app that teaches foundational Filipino Sign
-  Language (FSL) and checks your signing with the phone camera.
+  Language (FSL) and checks your signing with the phone camera
 </p>
 
 <p align="center">
